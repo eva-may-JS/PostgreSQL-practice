@@ -13,7 +13,7 @@ from sqlalchemy.orm import sessionmaker
 # We are telling the application that we are using the Postgres server, on a local host (since 
 # there are 3 slashes), in order to connect to our Chinook database.
 db = create_engine("postgresql:///chinook")
-# Will grab the metadata producted by our database table schema
+# Will grab the metadata produced by our database table schema
 base = declarative_base()
 
 # create a class-based model for the "Artist" table
